@@ -14,7 +14,13 @@
 
     <!-- Lightbox2 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-
+    
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" 
+  class="fixed bottom-6 right-6 z-50 bg-purple-700 text-white p-3 rounded-full shadow-lg hover:bg-purple-800 transition hidden"
+  aria-label="Scroll to top">
+  ↑
+</button>
 </head>
 
 <body>
@@ -1283,7 +1289,26 @@
 
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
+        
+<!-- Add this just before </body> -->
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.remove("hidden");
+    } else {
+      scrollTopBtn.classList.add("hidden");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
     </script>
 </body>
 
