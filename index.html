@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vintors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- WhatsApp Button (Initially Hidden) -->
+    <a id="whatsappBtn"
+        href="https://wa.me/+923423307684?text=Hello%20TheVintors%2C%20I%20am%20interested%20in%20your%20web%20development%20services."
+        target="_blank"
+        class="hidden fixed bottom-4 right-4 z-50 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300 text-sm font-semibold">
+        📱 WhatsApp Us
+    </a>
+
+    <!-- Email Button (Initially Hidden) -->
+    <a id="emailBtn"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=thevintors@gmail.com&su=Service%20Inquiry&body=Hello%20TheVintors%2C%0A%0AI%20am%20interested%20in%20your%20web%20development%20services.%0A%0ARegards%2C%0A[Your%20Name]"
+        target="_blank"
+        class="hidden fixed bottom-16 right-4 z-50 bg-blue-900 hover:bg-blue-700 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300 text-sm font-semibold">
+        📧 Email Us
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 bg-white-80 backdrop-blur-md shadow-sm transition-transform duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="images/logo.png" alt="TheVintors Logo" class="h-12 md:h-16 object-contain" />
+            </a>
+            <div class="hidden md:flex items-center font-bold space-x-10">
+                <a href="#about" class="hover:text-purple-600 transition">About</a>
+                <a href="#services" class="hover:text-purple-600 transition">Services</a>
+                <a href="#work" class="hover:text-purple-600 transition">Our Work</a>
+                <a href="#pricing" class="hover:text-purple-600 transition">Pricing</a>
+                <a href="#faq" class="hover:text-purple-600 transition">FAQ</a>
+            </div>
+            <div class="flex items-center">
+                <a href="https://forms.gle/qeeGKzEvySWvimFL7"
+                    class="px-4 py-2 bg-gradient-to-r from-blue-900 to-blue-900 text-white rounded-md font-medium hover:shadow-xl transition">Get
+                    Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white text-black pt-28 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 js-scroll scrolled-from-left">
+                    <h1 class="text-5xl font-bold mb-6">Transform Your Digital Experience With Us!</h1>
+                    <p class="text-xl mb-8 opacity-90">We’re a creative agency crafting standout brands through design,
+                        code, and strategy. Timeless aesthetics, Globally impact</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#"
+                            class="px-8 py-4 bg-gradient-to-r from-blue-800 to-pink-600 text-white rounded-md font-medium hover:shadow-xl rounded-lg font-bold hover:bg-auto/15 transition text-center transition">Explore
+                            Our Services</a>
+                        <a href="https://forms.gle/MWrLKbgS5VdadKgr8"
+                            class="px-8 py-4 border-2 text-black rounded-md font-medium hover:shadow-xl rounded-lg font-bold hover:bg-auto/15 transition text-center transition">Get
+                            15% Off</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 js-scroll scrolled-from-right container mx-auto px-8">
+                    <img src="images/HeroSec.png" alt="HeroSec" class="w-full rounded-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clients Logo Cloud -->
+    <section class="py-12 hero-gradient">
+        <div class="container mx-auto px-5">
+            <p class="text-center font-bold mb-12 text-white">Empowering innovation for teams in 9+ countries.</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 lg:gap-20">
+                <div class="w-24 opacity-80 hover:opacity-100 transition">
+                    <img src="images/Turkey.png" alt="Turkey Flag" class="h-8 w-auto">
+                </div>
+                <div class="w-24 opacity-80 hover:opacity-100 transition">
+                    <img src="images/Netherlands.png" alt="Netherlands Flag" class="h-8 w-auto">
+                </div>
+                <div class="w-24 opacity-80 hover:opacity-100 transition">
+                    <img src="images/Spain.png" alt="Spain Flag" class="h-8 w-auto">
+                </div>
+                <div class="w-24 opacity-80 hover:opacity-100 transition">
+                    <img src="images/United Kingdom.png" alt="UK Flag" class="h-8 w-auto">
+                </div>
+                <div class="w-24 opacity-80 hover:opacity-100 transition">
+                    <img src="images/UAE.png" alt="UAE Flag" class="h-8 w-auto">
+                </div>
+                <div class="w-24 opacity-80 hover:opacity-100 transition">
+                    <img src="images/Germany.png" alt="Germany Flag" class="h-8 w-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 js-scroll scrolled-scale">
+                <h2 class="text-5xl font-bold mb-6">Explore Our Services</h2>
+                <p class="text-xl max-w-2xl mx-auto text-gray-600">We Provide Tailored Digital Solutions To Help Your
+                    Business Grow From Web Development To Seo, Design, And Marketing</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg bg-purple-100 flex items-center justify-center mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Design & Development</h3>
+                    <p class="text-gray-600">Custom, responsive, built for speed, usability, performanc and
+                        high-performing websites tailored to your brand and business goals.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-purple-600 hover:text-purple-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-teal-400 rounded-md"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Graphics Desingning</h3>
+                    <p class="text-gray-600">Creative and impactful visuals including logos, branding kits, and modern
+                        UI/UX designs for websites and apps.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-blue-600 hover:text-blue-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg bg-green-100 flex items-center justify-center mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-md"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Advanced SEO Optimization</h3>
+                    <p class="text-gray-600">Boost your visibility with technical SEO, keyword targeting, on-page
+                        optimization, and content strategy.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-green-600 hover:text-green-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 4 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg bg-green-100 flex items-center justify-center mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-teal-400 rounded-md"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Growth</h3>
+                    <p class="text-gray-600">Consistent content creation, post scheduling, reach-building, and audience
+                        engagement across platforms.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-blue-600 hover:text-blue-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 5 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg bg-green-100 flex items-center justify-center mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-md"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Paid Advertising Campaigns</h3>
+                    <p class="text-gray-600">Targeted ad creation and management on Google, Facebook, and Instagram,
+                        focused on lead generation and ROI.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-green-600 hover:text-green-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 6 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg bg-purple-100 flex items-center justify-center mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Website Maintenance & Support</h3>
+                    <p class="text-gray-600">Ongoing updates, backups, Revamps and technical support to keep your site
+                        running smoothly.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-purple-600 hover:text-purple-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 js-scroll scrolled-scale">
+                <h2 class="text-5xl font-bold mb-4">About The Vintors</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    We are a creative digital agency committed to building powerful websites, bold designs, and
+                    marketing strategies that drive real results. At The Vintors, your vision meets our expertise.
+                </p>
+            </div>
+
+            <!-- Flex Layout -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+                <!-- Left: Text -->
+                <div class="w-full lg:w-1/2 js-scroll scrolled-from-left">
+                    <div class="mb-8">
+                        <p class="text-gray-600 mb-4 py-6 font-bold">
+                            The Vintors, we are a team of digital thinkers, designers, and developers passionate
+                            about transforming ideas into online success. Our mission is simple: to help businesses grow
+                            by creating stunning, high-performance digital experiences that truly connect with
+                            audiences.<br><br>
+                            We specialize in Web Design & Development, Graphic & UI/UX Design, Advanced SEO, Social
+                            Media Marketing, and Digital Advertising Campaigns. project we take on is tailored to
+                            your goals. We combine bold design, clean code, and smart marketing to not just build your
+                            brand, but to boost your reach, engagement, and results across the digital landscape.
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>All in one stop</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>24/7 support team</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Best Pricing</span>
+                            </li>
+                        </ul>
+                        <a href="https://forms.gle/qeeGKzEvySWvimFL7"
+                            class="mt-6 inline-block px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition">
+                            Request Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="w-full lg:w-1/2 js-scroll scrolled-from-right">
+                    <img src="images/About.png" alt="Team of professionals collaborating" class="w-full rounded-xl">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Meet Our Team Section -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 js-scroll scrolled-scale">
+                <h2 class="text-5xl font-bold mb-6">Meet The Team</h2>
+                <p class="text-xl max-w-1xl mx-auto text-gray-600">Behind every successful project at TheVintors is a
+                    group of passionate, skilled driven individuals,<br>We’re not just a team, we’re your creative and
+                    digital growth partners</p>
+            </div>
+
+            <div class="relative overflow-hidden">
+                <div class="flex overflow-x-auto pb-6 scrollbar-hide -mx-2 px-2" id="testimonial-carousel">
+                    <div class="flex space-x-4">
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/muddassir.png"
+                                    alt="Portrait of Elena Chen, Marketing Director at BrandHive"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">M, Muddassir Mutalib</h4>
+                                    <p class="text-gray-600 text-sm">Senoir Developer</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">“Clean, fast, and functional websites — built for performance
+                                and growth”</p>
+                            <div class="flex">
+                                <div class="text-purple-400 font-bold">5+ Years Expertise ✓</div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/shahnawaz.png"
+                                    alt="Portrait of Elena Chen, Marketing Director at BrandHive"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">M, Shahnawaz Anwar</h4>
+                                    <p class="text-gray-600 text-sm">Senoir Designer</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">“Modern visuals + smooth user experience. Design that connects
+                                and converts”</p>
+                            <div class="flex">
+                                <div class="text-blue-400 font-bold">3.5+ Years Expertise ✓</div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/hadi.png" alt="Portrait of Elena Chen, Marketing Director at BrandHive"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Mr, Hadi</h4>
+                                    <p class="text-gray-600 text-sm">SEO Expert</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">“We rank what matters. Smarter optimization, better
+                                visibility”</p>
+                            <div class="flex">
+                                <div class="text-purple-400 font-bold">2+ Years Expertise ✓</div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/shani.png"
+                                    alt="Portrait of Elena Chen, Marketing Director at BrandHive"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Mr, Shani</h4>
+                                    <p class="text-gray-600 text-sm">Digital Marketer</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">“Reach the right audience with proven digital growth
+                                strategies”</p>
+                            <div class="flex">
+                                <div class="text-purple-400 font-bold">1.5+ Years Expertise ✓</div>
+                            </div>
+                        </div>
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section id="solutions" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 js-scroll scrolled-scale">
+                <h2 class="text-5xl font-bold mb-6">Why Choose Us?</h2>
+                <p class="text-xl max-w-2xl mx-auto text-gray-600">We Don’t Just Build Brands, We Launch Them.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 js-scroll scrolled-from-right">
+                    <img src="images/why.jpg"
+                        alt="Team of professionals collaborating in a modern office with digital devices"
+                        class="w-full rounded-xl">
+                </div>
+                <div class="lg:w-1/2 js-scroll scrolled-from-left">
+                    <div class="mb-8">
+                        <p class="text-gray-600 font-bold mb-4">We’re not just developers — we’re digital partners
+                            committed to
+                            helping your brand grow. From custom-designed, responsive websites to SEO optimization and
+                            powerful social media integration, we create solutions that are tailored to your business
+                            goals. Our focus on clean design, user experience, performance — ensuring your online
+                            presence stands out, delivers results, and grows with your audience<br><br>Our team also
+                            brings strong expertise in SEO optimization — helping your site not only look good but rank
+                            better on search engines. We understand that online visibility is critical, so we use smart
+                            strategies to increase your reach and attract the right audience organically. Additionally,
+                            we support your digital growth through effective social media integration and marketing
+                            tools that connect your website to real-world results.<br><br>What sets us apart is our
+                            client-first approach: transparent communication, on-time delivery, and solutions that are
+                            never one-size-fits-all. Every business is different — and we treat it that way. Whether
+                            you’re a startup building your first online presence or an established brand looking to
+                            scale, we provide a level of quality, care, and creativity that turns ideas into digital
+                            success stories.</p>
+                        <a href="#"
+                            class="mt-6 inline-block px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition">Listed
+                            Below!</a>
+                    </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Feature 1 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <img src="images/leads.png" alt="Icon" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert-Led Solutions</h3>
+                    <p class="text-gray-600">We bring industry expertise to every project — ensuring every website is
+                        built with modern design, clean code, and results-driven structure.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-purple-600 hover:text-purple-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <img src="images/approch.png" alt="Icon" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom-Tailored Approach</h3>
+                    <p class="text-gray-600">No templates, no shortcuts. Every solution is crafted around your specific
+                        goals, brand identity, and audience needs.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-blue-600 hover:text-blue-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <img src="images/service.png" alt="Icon" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Results-Focused Services</h3>
+                    <p class="text-gray-600">We don't just build websites — we build growth engines through optimized
+                        SEO, smart design, and strategic social media integration.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-green-600 hover:text-green-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 4 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <img src="images/communication.png" alt="Icon" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Transparent Communication</h3>
+                    <p class="text-gray-600">Clear timelines, honest feedback, and ongoing support — you’re always in
+                        the loop at every stage of the project</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-blue-600 hover:text-blue-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 5 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <img src="images/convert.png" alt="Icon" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Design That Converts</h3>
+                    <p class="text-gray-600">Our designs aren’t just pretty — they’re built to engage users, increase
+                        conversions, and grow your online presence.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-green-600 hover:text-green-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+                <!-- Feature 6 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl border border-gray-100 js-scroll">
+                    <div class="w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <img src="images/partner.png" alt="Icon" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">One-Stop Digital Partner</h3>
+                    <p class="text-gray-600">From web development to digital marketing — we offer everything you need to
+                        build, launch, and grow online.</p>
+                    <a href="#"
+                        class="mt-4 inline-block font-medium text-purple-600 hover:text-purple-800 flex items-center">
+                        Learn more <span class="ml-2">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 js-scroll scrolled-scale">
+                <h2 class="text-5xl font-bold mb-6">What Our Clients Say</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Don't just take our word, Hear from customers who transformed
+                    their businesses.</p>
+            </div>
+
+            <div class="relative overflow-hidden">
+                <div class="flex overflow-x-auto pb-8 scrollbar-hide -mx-4 px-4" id="testimonial-carousel">
+                    <div class="flex space-x-6">
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/review.png"
+                                    alt="Professional headshot of Sarah Johnson, CEO of TechStart"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Sarah M</h4>
+                                    <p class="text-gray-600 text-sm">Founder at BrightLeaf Media</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">"The Vintors delivered exactly what we needed. Our new website
+                                is fast, modern, and ranks well on Google. Highly recommend their team!"</p>
+                            <div class="flex">
+                                <div class="text-pink-400 font-bold">★ ★ ★ ★ ★</div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/review.png"
+                                    alt="Headshot of Michael Rodriguez, Director of Operations at RetailPro"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">James Rodriguez</h4>
+                                    <p class="text-gray-600 text-sm">Owner of Bloom & Co.</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">“From logo design to social media handling, The Vintors
+                                handled it all perfectly. Great communication, timely delivery, and stunning visuals.”
+                            </p>
+                            <div class="flex">
+                                <div class="text-blue-400 font-bold">★ ★ ★ ★ ★</div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/review.png"
+                                    alt="Portrait of Elena Chen, Marketing Director at BrandHive"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">Elena Chen</h4>
+                                    <p class="text-gray-600 text-sm">Blog Owner</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">“SEO results exceeded expectations. Ranked top 5 within 6
+                                weeks.”</p>
+                            <div class="flex">
+                                <div class="text-green-400 font-bold">★ ★ ★ ★ ★</div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div
+                            class="testimonial-card flex-shrink-0 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <img src="images/review.png"
+                                    alt="Smiling photo of David Park, Founder of Park Innovations"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold">David Park</h4>
+                                    <p class="text-gray-600 text-sm">Creative Lead at UrbanStyle</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">“We needed a full brand refresh and The Vintors nailed it. The
+                                new logo, colors, and social templates made our brand feel premium and consistent.”</p>
+                            <div class="flex">
+                                <div class="text-purple-400 font-bold">★ ★ ★ ★ ★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 2 -->
+    <section class="py-20 bg-gradient-to-br from-purple-500 to-pink-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto js-scroll scrolled-scale">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">It’s Time to Stand Out Take Your Business Online</h2>
+                <p class="text-xl">Join thousands of growing brands that rely on TheVintors for digital
+                    success</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16 js-scroll scrolled-scale">
+                <h2 class="text-5xl font-bold mb-4">Our Design Highlights</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">
+                    A curated look at our design portfolio — from standout Designs to sleek business
+                </p>
+            </div>
+
+            <!-- Portfolio Categories -->
+            <div class="space-y-24">
+
+                <!-- Section 1: Logos -->
+                <div class="text-center">
+                    <h3 class="text-4xl mb-10 font-bold">Logos</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                        <a href="images/logo1.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/logo1.png" alt="Logo 1" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/logo2.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/logo2.png" alt="Logo 2" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/logo3.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/logo3.png" alt="Logo 3" class="w-full rounded-xl shadow-md mx-auto"></a>
+                    </div>
+                </div>
+
+                <!-- Section 2: Banners -->
+                <div class="text-center">
+                    <h3 class="text-4xl mb-10 font-bold">Banners</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                        <a href="images/bn1.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/bn1.png" alt="Logo 1" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/bn2.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/bn2.png" alt="Logo 2" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/bn3.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/bn3.png" alt="Logo 3" class="w-full rounded-xl shadow-md mx-auto"></a>
+                    </div>
+                </div>
+
+                <!-- Section 3: Buisness Card -->
+                <div class="text-center">
+                    <h3 class="text-4xl mb-10 font-bold">Buisness Card</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                        <a href="images/bc1.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/bc1.png" alt="Logo 1" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/bc2.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/bc2.png" alt="Logo 2" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/bc3.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/bc3.png" alt="Logo 3" class="w-full rounded-xl shadow-md mx-auto"></a>
+                    </div>
+                </div>
+
+                <!-- Section 4: Flayer -->
+                <div class="text-center">
+                    <h3 class="text-4xl mb-10 font-bold">Flyer</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                        <a href="images/fl1.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/fl1.png" alt="Logo 1" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/fl2.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/fl2.png" alt="Logo 2" class="w-full rounded-xl shadow-md mx-auto"></a>
+                        <a href="images/fl3.png" data-lightbox="logos" data-title="Logo 1">
+                            <img src="images/fl3.png" alt="Logo 3" class="w-full rounded-xl shadow-md mx-auto"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Desining Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 js-scroll scrolled-scale">
+                <h2 class="text-4xl font-bold mb-4">Professional Designs Pricing</h2>
+                <p class="text-xl max-w-2xl mx-auto text-gray-600">Design Packages That Match Your Vision and Budget</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Plan 1 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-purple-200 transition js-scroll">
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-600 mb-6">Perfect for small businesses</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$99</span>
+                        <span class="text-gray-600">/Onetime</span>
+                    </div>
+                    <a href="https://forms.gle/qeeGKzEvySWvimFL7"
+                        class="block w-full px-6 py-3 bg-white border-2 border-purple-600 text-purple-600 rounded-lg font-medium text-center hover:bg-purple-50 transition mb-8">Avail
+                        Now</a>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Logo (1 concept + 1 revision)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>2–3 social media post designs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Basic brand color and font guide</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>File formats: PNG, JPG</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Delivery: 2–4 Days</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Plan 2 - Highlighted -->
+                <div
+                    class="bg-gradient-to-br from-blue-600 to-pink-500 text-white p-8 rounded-xl shadow-xl relative js-scroll scrolled-scale">
+                    <div
+                        class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-pink-500 to-purple-600 px-4 py-1 rounded-full text-xs font-bold">
+                        MOST POPULAR
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Business</h3>
+                    <p class="text-purple-100 mb-6">Ideal for growing brands</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$199</span>
+                        <span class="text-purple-200">/Onetime</span>
+                    </div>
+                    <a href="https://forms.gle/MWrLKbgS5VdadKgr8"
+                        class="block w-full px-6 py-3 bg-white text-purple-600 rounded-lg font-medium text-center hover:bg-purple-100 transition mb-8">Get
+                        15% OFF</a>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Logo (2 concepts + 2 revisions)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>4–6 social media post designs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Business card or flyer/poster design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Mini brand kit (colors, fonts, style guide)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>File formats: PNG, JPG, PDF, SVG</span>
+                        </li>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Custom Designs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Delivery: 4–6 Days</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Plan 3 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-blue-200 transition js-scroll">
+                    <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                    <p class="text-gray-600 mb-6">For serious branding & marketing</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$295</span>
+                        <span class="text-gray-600">/Onetime</span>
+                    </div>
+                    <a href="https://forms.gle/qeeGKzEvySWvimFL7"
+                        class="block w-full px-6 py-3 bg-white border-2 border-purple-600 text-purple-600 rounded-lg font-medium text-center hover:bg-purple-50 transition mb-8">Avail
+                        Now</a>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Logo design (5 concepts + unlimited revisions)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>12+ social media post designs (carousel, story, static)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Business card, flyer, brochure (any 2)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Business card, flyer, brochure (any 2)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Priority support + editable source files (PSD/AI)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Fully Custom Design</span>
+                        </li>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Super Fast Delivery</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section 3 -->
+    <section class="py-20 bg-gradient-to-br from-purple-400 to-blue-400 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto js-scroll scrolled-scale">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Explore Our Creative Work</h2>
+                <p class="text-xl opacity-90 mb-10">A selection of websites we’ve crafted — clean, fast, and
+                    conversion-focused</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="pricing" class="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 js-scroll scrolled-scale">
+                <h2 class="text-4xl font-bold mb-4">Master Web Projects</h2>
+                <p class="text-xl max-w-2xl mx-auto text-gray-600">Custom Website Solutions Designed Around Your Needs
+                    and Budget</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Card 1 -->
+                <a href="" target="_blank"
+                    class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="images/mockup1.png" alt="Website 1"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-lg font-semibold text-gray-800">Website One</h3>
+                        <p class="text-sm text-gray-500">Click to visit</p>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="https://yourwebsite2.com" target="_blank"
+                    class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="images/mockup2.png" alt="Website 2"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-lg font-semibold text-gray-800">Website Two</h3>
+                        <p class="text-sm text-gray-500">Click to visit</p>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="https://yourwebsite3.com" target="_blank"
+                    class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="images/mockup3.png" alt="Website 3"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-lg font-semibold text-gray-800">Website Three</h3>
+                        <p class="text-sm text-gray-500">Click to visit</p>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="https://yourwebsite4.com" target="_blank"
+                    class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="images/mockup4.png" alt="Website 4"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-lg font-semibold text-gray-800">Website Four</h3>
+                        <p class="text-sm text-gray-500">Click to visit</p>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="https://yourwebsite5.com" target="_blank"
+                    class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="images/mockup5.png" alt="Website 5"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-lg font-semibold text-gray-800">Website Five</h3>
+                        <p class="text-sm text-gray-500">Click to visit</p>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="https://yourwebsite6.com" target="_blank"
+                    class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="images/mockup6.png" alt="Website 6"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white">
+                        <h3 class="text-lg font-semibold text-gray-800">Website Six</h3>
+                        <p class="text-sm text-gray-500">Click to visit</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 js-scroll scrolled-scale">
+                <h2 class="text-4xl font-bold mb-4">Master WebDev Pricing</h2>
+                <p class="text-xl max-w-2xl mx-auto text-gray-600">Choose a Website Plan That Works as Hard as You Do,
+                    Tailored Website Plans to Match Your Goals and Budget</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Plan 1 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-purple-200 transition js-scroll">
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-600 mb-6">Perfect for individuals</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$249</span>
+                        <span class="text-gray-600">/Onetime</span>
+                    </div>
+                    <a href="https://forms.gle/qeeGKzEvySWvimFL7"
+                        class="block w-full px-6 py-3 bg-white border-2 border-purple-600 text-purple-600 rounded-lg font-medium text-center hover:bg-purple-50 transition mb-8">Avail
+                        Now</a>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>1–3 Page Responsive Website</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Mobile Optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Basic On-Page SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Contact Form Integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Delivery: 4–5 Days</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Plan 2 - Highlighted -->
+                <div
+                    class="bg-gradient-to-br from-purple-600 to-pink-500 text-white p-8 rounded-xl shadow-xl relative js-scroll scrolled-scale">
+                    <div
+                        class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-pink-500 to-purple-600 px-4 py-1 rounded-full text-xs font-bold">
+                        MOST POPULAR
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Business</h3>
+                    <p class="text-purple-100 mb-6">For growing businesses</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$599</span>
+                        <span class="text-purple-200">/Onetime</span>
+                    </div>
+                    <a href="https://forms.gle/MWrLKbgS5VdadKgr8"
+                        class="block w-full px-6 py-3 bg-white text-purple-600 rounded-lg font-medium text-center hover:bg-purple-100 transition mb-8">Get
+                        15% OFF</a>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>5–7 Page Custom Website</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Blog Setup & Internal Linking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Advanced On-Page SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Image Optimization & Sitemap</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Mobile Friendly</span>
+                        </li>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Custom Designs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">✓</span>
+                            <span>Delivery: 7–10 Days</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Plan 3 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-blue-200 transition js-scroll">
+                    <h3 class="text-2xl font-bold mb-2">Custom WebApp</h3>
+                    <p class="text-gray-600 mb-6">Custom solutions for large teams</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$1299</span>
+                        <span class="text-gray-600">/Onetime</span>
+                    </div>
+                    <a href="https://forms.gle/qeeGKzEvySWvimFL7"
+                        class="block w-full px-6 py-3 bg-white border-2 border-purple-600 text-purple-600 rounded-lg font-medium text-center hover:bg-purple-50 transition mb-8">Avail
+                        Now</a>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Full Custom Web App or Large Website</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>10+ Pages SEO Optimized</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Blog Strategy + Content Planning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Monthly SEO Management Options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Performance & Speed Monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Dedicated Support & Maintenance</span>
+                        </li>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Advance SEO Optimization</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 3 -->
+    <section class="py-20 bg-gradient-to-br from-purple-500 to-pink-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto js-scroll scrolled-scale">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Start Your Journey with TheVintors</h2>
+                <p class="text-xl opacity-90 mb-10">Your ideas deserve more than templates. Let’s bring them to life
+                    with bold design, strong code, and smart strategy. Get in touch now!</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+        <!-- FAQ Section -->
+    <section id="faq" class="bg-gray-50 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-purple-700 mb-10">Frequently Asked Questions</h2>
+            <div class="space-y-6 max-w-3xl mx-auto">
+
+                <!-- Question 1 -->
+                <div class="border rounded-xl p-5 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">What services does The Vintors offer?</h3>
+                    <p class="text-gray-600">We offer a wide range of digital solutions including website designing, web
+                        development, SEO, graphic designing, and digital marketing services tailored to help businesses
+                        grow online.</p>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="border rounded-xl p-5 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">How long does it take to design and develop a
+                        website?</h3>
+                    <p class="text-gray-600">It typically takes 5 to 15 working days depending on the complexity of the
+                        project and the number of features you require.</p>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="border rounded-xl p-5 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Do you provide SEO services?</h3>
+                    <p class="text-gray-600">Yes, we provide both basic and advanced SEO services to improve your
+                        website’s visibility on search engines like Google.</p>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="border rounded-xl p-5 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Can I update my website content after it's
+                        live?</h3>
+                    <p class="text-gray-600">Absolutely! We build user-friendly websites that allow you to easily update
+                        your content. We also offer maintenance services if you'd like us to handle the updates.</p>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="border rounded-xl p-5 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">How do I get started with The Vintors?</h3>
+                    <p class="text-gray-600">Simply fill out our contact form or WhatsApp us directly. We'll schedule a
+                        free consultation to discuss your project and goals.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
+                Let's Work Together
+            </h2>
+            <p class="text-center max-w-xl mx-auto text-gray-600 text-base md:text-lg mb-12">
+                Have a project in mind or just want to say hello? Drop us a message and we'll get back to you soon.
+            </p>
+
+            <form action="https://formspree.io/f/xgvypyvp" method="POST"
+                class="space-y-6 bg-gray-50 p-8 rounded-xl shadow-md">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-700">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+
+                <div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold py-3 rounded-md hover:shadow-lg transition duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-gray-900 text-gray-400 py-16">
+        <div class="container mx-auto px-6">
+            <div class="col-span-2">
+                <a href="pages/privacy.html" class="hover:text-white text-center transition space-x-2 mb-6">Privacy
+                    Policy</a>
+                <a href="pages/terms.html" class="hover:text-white text-center transition space-x-2 mb-6">Terms of
+                    Service</a>
+                <br>
+                &copy; 2025 The Vintors. All rights reserved.
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- Email & Whatsapp Button JS -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const scrollY = window.scrollY;
+            const whatsappBtn = document.getElementById("whatsappBtn");
+            const emailBtn = document.getElementById("emailBtn");
+
+            if (scrollY > 100) {
+                whatsappBtn.classList.remove("hidden");
+                emailBtn.classList.remove("hidden");
+            } else {
+                whatsappBtn.classList.add("hidden");
+                emailBtn.classList.add("hidden");
+            }
+        });
+    </script>
+
+    <!-- Animation Script -->
+    <script>
+        // Scroll animation
+        const scrollElements = document.querySelectorAll('.js-scroll');
+
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+            );
+        };
+
+        const displayScrollElement = (element) => {
+            element.classList.add('scrolled');
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                    displayScrollElement(el);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+        });
+
+        // Initialize - show elements already in view
+        document.addEventListener('DOMContentLoaded', () => {
+            handleScrollAnimation();
+
+            // Hero image animation
+            const heroTitle = document.querySelector('.hero-gradient h1');
+            heroTitle.style.opacity = '0';
+            heroTitle.style.transform = 'translateY(30px)';
+
+            setTimeout(() => {
+                heroTitle.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                heroTitle.style.opacity = '1';
+                heroTitle.style.transform = 'translateY(0)';
+            }, 100);
+        });
+
+        // Testimonial carousel
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        const carousel = document.getElementById('testimonial-carousel');
+
+        carousel.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startPosition = e.clientX;
+            carousel.style.cursor = 'grabbing';
+        });
+
+        carousel.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const currentPosition = e.clientX;
+            currentTranslate = prevTranslate + currentPosition - startPosition;
+            carousel.scrollLeft = -currentTranslate;
+        });
+
+        carousel.addEventListener('mouseup', () => {
+            isDragging = false;
+            prevTranslate = currentTranslate;
+            carousel.style.cursor = 'grab';
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
+
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                navbar.style.transform = "translateY(-100%)";
+            } else {
+                // Scrolling up
+                navbar.style.transform = "translateY(0)";
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+</body>
+
+</html>
